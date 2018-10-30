@@ -25,9 +25,9 @@
 #include <inttypes.h>
 #endif
 
-
 int msgpack_pack_object(msgpack_packer* pk, msgpack_object d)
 {
+    //switch loop
     switch(d.type) {
     case MSGPACK_OBJECT_NIL:
         return msgpack_pack_nil(pk);
